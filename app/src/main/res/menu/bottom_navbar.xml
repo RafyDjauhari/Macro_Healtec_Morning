@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/outline_home_24"
+        android:title="Home"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/cari"
+        android:icon="@drawable/outline_search_24"
+        android:title="Cari"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/jadwal"
+        android:icon="@drawable/outline_calendar_month_24"
+        android:title="Jadwal"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/notifikasi"
+        android:icon="@drawable/outline_notifications_24"
+        android:title="Notifikasi"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/konsultasi"
+        android:icon="@drawable/outline_question_answer_24"
+        android:title="Konsultasi"
+        android:visible="true" />
+</menu>

@@ -1,9 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    android:padding="15dp"
+    android:background="#EDF6FF"
+    tools:context=".Login">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun!"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#133695"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Daftar Untuk Melanjutkan"
+            android:textSize="20dp"
+            android:textColor="#133695"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherLoginMtd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:layout_marginVertical="30dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="7dp"
+            android:gravity="center"
+            android:background="@drawable/other_login_button_bg"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/google"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:text="Google"
+                android:textColor="#0F39BE"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="7dp"
+            android:layout_marginLeft="21dp"
+            android:gravity="center"
+            android:background="@drawable/other_login_button_bg"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/facebook"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:text="Facebook"
+                android:textColor="#0F39BE"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/atauText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherLoginMtd"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="atau"
+        android:textColor="#133695"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atauText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="18dp"
+        android:hint="Masukkan Nama"
+        android:padding="20dp"
+        android:textColorHint="#0F39BE"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="18dp"
+        android:hint="Masukkan Email"
+        android:padding="20dp"
+        android:textColorHint="#0F39BE"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEmail"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="18dp"
+        android:hint="Masukkan Password"
+        android:padding="20dp"
+        android:textColorHint="#0F39BE"
+        android:textSize="14dp"
+        android:inputType="textPassword"
+        tools:ignore="TextSizeCheck" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPassword"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_button_bg"
+        android:text="masuk"
+        android:textColor="#D7E9FF"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/daftarSekarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah memiliki akun ?"
+            android:textColor="#133695"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Masuk sekarang!"
+            android:textColor="#133695"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
