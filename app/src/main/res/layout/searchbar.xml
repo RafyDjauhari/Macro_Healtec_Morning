@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Accent2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari"
+        android:textColor="@color/Secondary1" />
+
+    <LinearLayout
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14sp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_background">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/outline_search_24"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="Cari obat, zat, nama apotek, ..."
+            android:textColor="@color/Secondary1"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_filter_list_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:text="Semua"
+                android:textSize="18sp"
+                android:textColor="@color/Secondary1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:text="Obat"
+                android:textSize="18sp"
+                android:textColor="@color/Secondary1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:text="Apotek"
+                android:textSize="18sp"
+                android:textColor="@color/Secondary1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:text="Komposisi"
+                android:textSize="18sp"
+                android:textColor="@color/Secondary1"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 hasil semua pencarian"
+            android:textSize="16sp"
+            android:textColor="@color/Primary1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=' "Valdres"'
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="15"
+            android:textColor="@color/Primary1"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_swap_vert_24"
+            android:layout_weight="2"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

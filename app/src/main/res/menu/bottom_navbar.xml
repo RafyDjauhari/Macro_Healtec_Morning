@@ -4,7 +4,7 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/outline_home_24"
-        android:title="Home"
+        android:title="Beranda"
         android:visible="true" />
 
     <item

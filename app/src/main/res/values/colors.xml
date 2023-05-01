@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="Primary1">#133695</color>
+    <color name="Primary2">#D7E9FF</color>
+    <color name="Secondary1">#0F39BE</color>
+    <color name="Secondary2">#50A4FF</color>
+    <color name="Accent1">#11225A</color>
+    <color name="Accent2">#EDF6FF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
