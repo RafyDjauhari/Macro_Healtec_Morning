@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Onboarding1">
+
+    <Button
+        android:id="@+id/buttom_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="LEWATI"
+        android:fontFamily="@font/mmedium"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ob_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ob1"
+        app:layout_constraintTop_toBottomOf="@+id/buttom_01"
+        tools:layout_editor_absoluteX="111dp" />
+
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/mmedium"
+        android:gravity="center"
+        android:padding="20sp"
+        android:text="Pahami ragam obat dan cara pakainya untuk kebaikan kesehatan Anda"
+        android:textColor="@color/text"
+        app:layout_constraintTop_toBottomOf="@+id/ob_1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/button"
+        app:layout_constraintBaseline_toBottomOf="@id/text_01"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
